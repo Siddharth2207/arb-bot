@@ -24,4 +24,4 @@ jobs:
 
       # pass the required values as github secrets to the bot
       - name: Take Orders
-        run: node arb-bot -k ${{ secrets.BOT_WALLET_PRIVATEKEY }} -r ${{ secrets.RPC_URL }} -m router -s https://api.thegraph.com/subgraphs/name/siddharth2207/slsohysubgraph --orderbook-address 0xd14c2ba8779c6c4fba0d0606f4ff65ecd4c5bb38 --arb-address 0x4c7e09af663f2699275bc7c8360eb6b22a5c3af7 -g 0 --use-zeroex-arb --repetitions 9 -l 'SushiSwapV2,SushiSwapV2,UniswapV2,UniswapV3,QuickSwap'
+        run: node arb-bot -k ${{ secrets.BOT_WALLET_PRIVATEKEY }} -r ${{ secrets.RPC_URL }} -m router -s https://api.thegraph.com/subgraphs/name/siddharth2207/slsohysubgraph --orderbook-address 0xd14c2ba8779c6c4fba0d0606f4ff65ecd4c5bb38 --arb-address 0x4c7e09af663f2699275bc7c8360eb6b22a5c3af7 -g 0 --use-zeroex-arb --repetitions 9 -l 'SushiSwapV2,SushiSwapV3,UniswapV2,UniswapV3,QuickSwap'
